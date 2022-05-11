@@ -15,10 +15,9 @@ class App {
     d.sceneCanvas.height = d.sceneCanvas.offsetHeight
 
     d.canvas = new fabric.Canvas(d.sceneCanvas)
-    d.isMouseDown = false
 
     d.scale = 1
-    d.fontSize = 12
+    d.fontSize = 14
     d.virtualSizes = Array(10).fill().map((_, idx) => {
       const plusNum = Math.pow(10, idx)
       return [2, 5, 10].map(n => n * plusNum)
